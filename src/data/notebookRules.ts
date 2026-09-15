@@ -160,7 +160,7 @@ export const NOTEBOOK_RULES: NotebookRuleSection[] = [
     sections: [
       {
         heading: '1. تصنيفات الأفعال التقريرية (Stative Verbs Categories)',
-        description: 'الأفعال التقريرية تعبر عن حالة أو شعور أو ملكية أو نشاط ذهني، ولا تقبل صيغة الاستمرار (-ing) في حالتها التقريرية وتأتي في المضارع البسيط حتى لو دل المعنى على الوقت الحالي!',
+        description: 'الأفعال التقريرية تعبر عن حالة أو شعور أو ملكية أو نشاط ذهني داخلي، ولا تقبل صيغة الاستمرار (-ing) في حالتها التقريرية وتأتي في المضارع البسيط حتى لو دل المعنى على الوقت الحالي!',
         examples: [],
         importantNotes: [
           '🧠 1) أفعال العقل والذهن (Mental / Mind):',
@@ -172,44 +172,58 @@ export const NOTEBOOK_RULES: NotebookRuleSection[] = [
         ]
       },
       {
-        heading: '2. الأفعال الثلاثة ذات المعنيين (Dual-Meaning Verbs) - الأهم في الاختبارات!',
-        description: 'هذه الأفعال قد تأتي في المضارع البسيط إذا دلت على حالة، أو في المضارع المستمر إذا دلت على حركة أو نشاط جسدي:',
+        heading: '2. الأفعال المشتركة ذات المعنيين (Dual-Meaning Verbs) - الأهم في اختبارات التوجيهي والمدرسة!',
+        description: 'هذه الأفعال الشهيرة في الدفتر تأتي تارة في المضارع البسيط (إذا دلت على حالة/تقريرية)، وتارة أخرى في المضارع المستمر (إذا دلت على حركة أو نشاط جسدي/ذهني جارٍ الآن):',
         examples: [
           {
-            en: 'Ahmad has 3 luxury cars. / I have 3 luxury cars.',
-            ar: 'معنى "يمتلك" (حالة/ملكية) ➔ مضارع بسيط فقط! ممنوع وضع ing.',
+            en: 'The soup tastes delicious. / The food smells good.',
+            ar: 'مذاق الشوربة لذيذ / رائحة الطعام زكية ➔ صفة وحالة تقريرية ثابتة تأخذ بسيط فقط دون ing.',
+            highlight: 'tastes / smells'
+          },
+          {
+            en: 'The chef is tasting the soup right now.',
+            ar: 'الشيف يتذوق الشوربة بلسانه الآن ➔ حركة ونشاط جسدي جارٍ فيأخذ المضارع المستمر is tasting!',
+            highlight: 'is tasting'
+          },
+          {
+            en: 'Ahmad has 3 luxury cars. / I have a smartphone.',
+            ar: 'معنى "يمتلك" (حالة ملكية دائمة) ➔ مضارع بسيط فقط! ممنوع وضع ing.',
             highlight: 'has / have'
           },
           {
-            en: 'Ahmad is having breakfast / lunch / dinner / bath / shower.',
-            ar: 'معنى "يتناول وجبة أو يستحم" (يقوم بعمل ما/حركة) ➔ يقبل المضارع المستمر is having!',
+            en: 'Ahmad is having breakfast / lunch / dinner / a shower / a great time.',
+            ar: 'معنى "يتناول وجبة أو يستحم أو يقضي وقتاً" (نشاط وحدث حركي) ➔ يقبل المضارع المستمر is having!',
             highlight: 'is having'
           },
           {
-            en: 'He looks like Afify.',
-            ar: 'معنى "يبدو" (حالة ووصف) ➔ مضارع بسيط (looks) ولا يقبل ing.',
-            highlight: 'looks like'
+            en: 'He looks tired today. / The girl looks like her mother.',
+            ar: 'معنى "يبدو / يظهر بمظهر معين" (وصف وحالة متبوعة بصفة أو like) ➔ مضارع بسيط (looks) ولا يقبل ing إطلاقاً!',
+            highlight: 'looks / looks like'
           },
           {
-            en: 'I am looking at the door.',
-            ar: 'معنى "ينظر بعينيه" (حركة مع حرف الجر at) ➔ مضارع مستمر (am looking at)!',
+            en: 'I am looking at the board at the exact moment.',
+            ar: 'معنى "ينظر بعينيه" (حركة وتوجيه بصر متبوع بحرف الجر at) ➔ مضارع مستمر يقبل ing: am looking at!',
             highlight: 'am looking at'
           },
           {
-            en: 'I think he is right.',
-            ar: 'معنى "يعتقد / إبداء رأي" (حالة عقلية) ➔ مضارع بسيط (think) بدون ing.',
+            en: 'I think he is a very smart boy. / I think English is easy.',
+            ar: 'معنى "يعتقد / في رأيي وقناعتي" (إبداء رأي دون حرف جر) ➔ مضارع بسيط تقريري (think) ممنوع من ing تماماً!',
             highlight: 'think'
           },
           {
-            en: 'I am thinking about the exam.',
-            ar: 'معنى "يفكر ويدبر ذهنه في مسألة معينة" (عملية تفكير جارية) ➔ يقبل المستمر (am thinking about)!',
+            en: 'Right now, I am thinking about the answer to this question.',
+            ar: 'معنى "يفكر وينشغل ذهنه بحل مسألة" (نشاط ذهني جارٍ متبوع بحرف الجر about أو of) ➔ مضارع مستمر يقبل ing: am thinking about!',
             highlight: 'am thinking about'
           }
         ],
         importantNotes: [
-          'ملخص Have: إذا كانت بمعنى (يمتلك) ➔ have/has. إذا كانت مع طعام أو شراب أو استحمام (having breakfast/lunch/shower) ➔ يقبل ing.',
-          'ملخص Look: إذا كانت بمعنى (يبدو مثل) ➔ look/looks like. إذا كانت بمعنى (ينظر إلى) ومتبوعة بـ at ➔ looking at.',
-          'ملخص Think: إذا كانت بمعنى (أعتقد أن...) ➔ I think. إذا كانت بمعنى (أفكر في موضوع ما) ومتبوعة بـ about/of ➔ I am thinking about.'
+          '⭐ القاعدة الذهبية لفعل (Look) مع حروف الجر:',
+          '1) إذا جاء Look بمعنى (يبدو / يظهر بمظهر): يأتي بعده صفة مباشرة (looks happy/tired) أو عبارة (looks like her mother) دون حرف جر موجه، وهنا يكون فعلاً تقريرياً (Stative) ولا يقبل ing إطلاقاً ويأتي بسيطاً (look/looks).',
+          '2) إذا جاء Look بمعنى (ينظر بعينيه / يبحث / يعتني): يكون متبوعاً بحرف جر دائماً مثل: look at (ينظر إلى)، look for (يبحث عن)، look after (يعتني بـ). وهنا يصبح فعل حركة إرادي (Dynamic Action) ويقبل صيغة الاستمرار (-ing) مع دلالات اللحظة الحالية مثل: at the moment / right now!',
+          '⭐ القاعدة الذهبية لفعل (Think) مع حروف الجر:',
+          '1) إذا جاء Think بمعنى (يعتقد / في رأيي / يرى): لا يأتي بعده حرف جر (about/of)، بل تأتي بعده جملة كاملة توضح الرأي أو القناعة مثل: (I think he is honest / I think it will rain). وهنا يكون فعلاً تقريرياً (Stative - Opinion) وممنوع منعاً باتاً وضع ing له، ولا يجوز قول I am thinking he is right ❌.',
+          '2) إذا جاء Think بمعنى (يفكر / ينشغل ذهنه بالتدبير أو اتخاذ قرار): يكون متبوعاً بحرف جر دائماً مثل (think about أو think of). وهنا يصبح نشاطاً ذهنياً حركياً مستمراً (Active Cognitive Process) ويقبل صيغة الاستمرار (-ing) في المضارع المستمر: I am thinking about traveling / thinking about the exam!',
+          '⭐ ملخص فعل (Have): إذا دل على الملكية (يمتلك سيارة/بيت) ➔ have/has بسيط فقط. إذا دل على نشاط مثل تناول وجبة أو أخذ حمام أو قضاء وقت (having breakfast/lunch/bath/party) ➔ يقبل ing.'
         ]
       }
     ]

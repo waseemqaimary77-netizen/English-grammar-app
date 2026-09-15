@@ -1,6 +1,6 @@
 import React from 'react';
 import { Question, UserAnswerRecord } from '../types';
-import { Trophy, CheckCircle2, XCircle, RotateCcw, ArrowLeft, Award, Sparkles, UserCheck, CheckCircle } from 'lucide-react';
+import { Trophy, CheckCircle2, XCircle, RotateCcw, ArrowLeft, Award, Sparkles, UserCheck, CheckCircle, Heart, ShieldCheck } from 'lucide-react';
 
 interface Props {
   questions: Question[];
@@ -204,6 +204,18 @@ export const ExamResultsModal: React.FC<Props> = ({
               </div>
             );
           })}
+        </div>
+      </div>
+
+      {/* Dedication & Copyright Card */}
+      <div className="bg-slate-900 text-white rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs border border-slate-800 shadow-xs">
+        <div className="flex items-center gap-2 font-bold text-amber-400">
+          <Heart className="w-4 h-4 text-rose-500 fill-rose-500 shrink-0" />
+          <span>إهداء خاص للأخ: <strong>أكرم عواد (صاحب الواد)</strong> 🌟</span>
+        </div>
+        <div className="flex items-center gap-1.5 text-slate-300 text-[11px]">
+          <ShieldCheck className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+          <span>جميع الحقوق محفوظة لدى شركة الواد للاستيراد والتصدير ©</span>
         </div>
       </div>
     </div>
